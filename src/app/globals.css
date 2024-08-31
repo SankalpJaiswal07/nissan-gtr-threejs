@@ -31,3 +31,22 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Use this in your global CSS file */
+.scrollbar-thin {
+  scrollbar-width: thin;
+}
+
+.scrollbar-thumb-red::-webkit-scrollbar {
+  width: 3px;
+}
+
+.scrollbar-thumb-red::-webkit-scrollbar-thumb {
+  background-color: #fe4443;
+  border-radius: 2px;
+}
+
+/* For WebKit-based browsers (Safari, Chrome) */
+.overflow-scrolling-touch {
+  -webkit-overflow-scrolling: touch;
+}
