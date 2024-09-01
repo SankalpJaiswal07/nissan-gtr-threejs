@@ -13,9 +13,24 @@ import { useControls } from "leva";
 
 export default function Model(props) {
   const { nodes, materials } = useGLTF("/nissan-gtr.gltf");
-  const { scene, camera } = useThree();
+  const { scene, camera, size } = useThree();
   const modelRef = useRef();
   const t1 = gsap.timeline();
+
+  useEffect(() => {
+    if (modelRef.current) {
+      if (size.width < 768) {
+        // Mobile view
+        modelRef.current.scale.set(1.0, 1.0, 1.0);
+      } else if (size.width < 1024) {
+        // Tablet view
+        modelRef.current.scale.set(1.5, 1.5, 1.5);
+      } else {
+        // Desktop view
+        modelRef.current.scale.set(1.8, 1.8, 1.8);
+      }
+    }
+  }, [size]);
   // console.log(camera.position, scene.position, scene.rotation);
   // console.log(modelRef.current.position);
 
@@ -403,7 +418,7 @@ export default function Model(props) {
   }, [scene]);
 
   return (
-    <group {...props} dispose={null} scale={1.8} ref={modelRef}>
+    <group {...props} dispose={null} ref={modelRef}>
       <mesh
         geometry={nodes.GTR041.geometry}
         material={materials["マテリアル.004"]}
@@ -708,7 +723,7 @@ export default function Model(props) {
           material={materials["マテリアル.650"]}
         />
         <mesh
-          geometry={nodes.Mesh_11.geometry}
+          geometry={nodes.Mesh_11?.geometry}
           material={materials["マテリアル.649"]}
         />
       </group>
@@ -798,7 +813,7 @@ export default function Model(props) {
           material={materials["マテリアル.066"]}
         />
         <mesh
-          geometry={nodes.Mesh_19.geometry}
+          geometry={nodes.Mesh_19?.geometry}
           material={materials["マテリアル.067"]}
         />
       </group>
