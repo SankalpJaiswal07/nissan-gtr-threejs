@@ -67,7 +67,7 @@ function Section2() {
   }, []);
 
   return (
-    <section className="second-section h-screen flex justify-between items-center m-auto w-screen">
+    <section className="second-section h-screen flex justify-between items-center m-auto w-screen z-[99]">
       <div className="flex flex-col items-center justify-center rotate-[-90deg] -translate-x-[300px] -translate-y-[75px] transition-all duration-500 ease-in-out  font-bold -p-2 section--1">
         <h1 className="text-[5vw] text-[#464955]">Pure.</h1>
         <h1 className="text-[5vw] text-[#464955]">Rare.</h1>

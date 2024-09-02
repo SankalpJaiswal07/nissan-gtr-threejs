@@ -39,12 +39,12 @@ function Section6() {
     );
   }, []);
   return (
-    <section class="w-screen h-screen snap-center relative flex justify-between items-center sixth-section mx-auto section--6">
-      <div class="flex flex-col w-[30%] ml-[10%]  transition-all duration-500 ease-in-out">
-        <h1 class="text-[5vw] leading-[5vw] text-red-500 mb-5 font-orbitron uppercase font-bold">
+    <section className="w-screen h-screen snap-center relative flex justify-between items-center sixth-section mx-auto section--6">
+      <div className="flex flex-col w-[30%] ml-[10%]  transition-all duration-500 ease-in-out">
+        <h1 className="text-[5vw] leading-[5vw] text-red-500 mb-5 font-orbitron uppercase font-bold">
           Timeless Speed
         </h1>
-        <p class="text-[1.5vw] leading-[2.2vw] text-black font-light">
+        <p className="text-[1.5vw] leading-[2.2vw] text-black font-light">
           With energising performance derived from optimised aerodynamics ground
         </p>
       </div>

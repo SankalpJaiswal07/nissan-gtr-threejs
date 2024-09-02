@@ -18,7 +18,7 @@ function Section1() {
     });
   });
   return (
-    <section className="w-screen h-screen flex flex-col justify-between items-center scroll-snap-center section--one">
+    <section className="w-screen h-screen flex flex-col justify-between items-center scroll-snap-center section--one z-[99]">
       <div className="w-[70%] flex flex-col items-center relative">
         <nav className="flex items-center w-full justify-center mt-5 font-semibold text-[46px]  text-[#464955]">
           Nissan GT-R

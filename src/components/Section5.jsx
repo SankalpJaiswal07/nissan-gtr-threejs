@@ -43,12 +43,12 @@ function Section5() {
   }, []);
 
   return (
-    <section class="flex justify-end items-center mx-auto rightSide h-screen w-screen fifth-section section--5">
-      <div class="flex flex-col w-[30%] mr-[10%]  transition-all duration-500 ease-in-out ">
-        <h1 class="text-[5vw] leading-[5vw] text-red-600 mb-[20px] font-orbitron uppercase font-bold">
+    <section className="flex justify-end items-center mx-auto rightSide h-screen w-screen fifth-section section--5">
+      <div className="flex flex-col w-[30%] mr-[10%]  transition-all duration-500 ease-in-out ">
+        <h1 className="text-[5vw] leading-[5vw] text-red-600 mb-[20px] font-orbitron uppercase font-bold">
           Beautiful design dna
         </h1>
-        <p class="text-[1.5vw] leading-[2.2vw] text-black font-light">
+        <p className="text-[1.5vw] leading-[2.2vw] text-black font-light">
           We believe that the purest creation are those where the design, the
           driving experience, the passenger experience, and engineering, all
           play an equal role.

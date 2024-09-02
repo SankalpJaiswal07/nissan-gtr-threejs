@@ -1,11 +1,11 @@
 "use client";
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
-// import Model from "../../public/GTR";
 import { OrbitControls } from "@react-three/drei";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
-import Model from "../../public/Nissan-gtr";
+import { Model } from "../../public/Nissan-gtr-v1";
+// import Model from "../../public/Nissan-gtr";
 
 gsap.registerPlugin(ScrollTrigger);
 

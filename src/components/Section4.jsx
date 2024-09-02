@@ -44,11 +44,11 @@ function Section4() {
 
   return (
     <section className="h-screen fourth-section w-screen items-center flex justify-end m-auto section--4">
-      <div class="flex flex-col w-[30%] mr-[10%]  transition-all duration-500 ease-in-out section--four--container ">
-        <h1 class="text-[5vw] leading-[5vw] text-red-500 mb-5 font-orbitron uppercase title font-bold">
+      <div className="flex flex-col w-[30%] mr-[10%]  transition-all duration-500 ease-in-out section--four--container ">
+        <h1 className="text-[5vw] leading-[5vw] text-red-500 mb-5 font-orbitron uppercase title font-bold">
           more stable
         </h1>
-        <p class="text-[1.5vw] leading-[2.2vw] text-black font-light detail">
+        <p className="text-[1.5vw] leading-[2.2vw] text-black font-light detail">
           The car had a sleek and aerodynamic body design inspired by Group C
           race cars. Jiotto Design selected three design proposals out of the
           initially proposed 200 for final development. Out of the three, a

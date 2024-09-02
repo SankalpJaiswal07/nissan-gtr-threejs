@@ -67,7 +67,7 @@ function Section7() {
         <h1 className="z-10 text-[6vw] font-bold text-[#464955] uppercase">
           Nissan: <span className="text-[#fe4443]">gt-r</span>
         </h1>
-        <h3 className="text-gray-200 absolute text-[300px] whitespace-nowrap uppercase top-32 z-0 font-bold">
+        <h3 className="text-gray-200 absolute text-[300px] whitespace-nowrap uppercase top-32  font-bold -z-0">
           2023
         </h3>
         <p className="text-[2vw] font-normal text-[#464955] z-10">
@@ -77,7 +77,7 @@ function Section7() {
       {isPlaying && (
         <div
           ng-if="carPowerOn"
-          class="absolute flex items-center right-48 bottom-36 z-[99]"
+          className="absolute flex items-center right-48 bottom-36 z-[99]"
         >
           <div
             onMouseDown={handleMouseDown}

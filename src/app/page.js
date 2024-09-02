@@ -10,11 +10,11 @@ import Section7 from "@/components/Section7";
 
 export default function Home() {
   return (
-    <div className="bg-[#f0efef] overflow-hidden overflow-y-scroll scrollbar-thin scrollbar-thumb-red overflow-scrolling-touch">
+    <div className="bg-[#f0efef] overflow-hidden overflow-y-scroll scrollbar-thin scrollbar-thumb-red overflow-scrolling-touch z-[99]">
       <div className="z-50">
         <Loader />
       </div>
-      <div className="h-screen w-full fixed top-0 z-40 ">
+      <div className="h-screen w-full fixed top-0 ">
         <CanvasContainer />
       </div>
       <Section1 />
