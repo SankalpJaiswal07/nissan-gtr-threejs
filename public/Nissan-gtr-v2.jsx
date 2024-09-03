@@ -13,9 +13,7 @@ import gsap from "gsap";
 import { useControls } from "leva";
 
 export function Model(props) {
-  const { nodes, materials } = useGLTF(
-    "https://ltpxzulovhrlxhmhlmnp.supabase.co/storage/v1/object/public/gtr-r35/nissan-gtr-v2.glb?t=2024-09-03T08%3A53%3A57.695Z"
-  );
+  const { nodes, materials } = useGLTF("/nissan-gtr-v2.glb");
   const { scene, camera, size } = useThree();
   const modelRef = useRef();
   const t1 = gsap.timeline();
@@ -444,19 +442,19 @@ export function Model(props) {
       />
       <group scale={1.278}>
         <mesh
-          geometry={nodes.Mesh?.geometry}
+          geometry={nodes.Mesh_1.geometry}
           material={materials["マテリアル.008"]}
         />
         <mesh
-          geometry={nodes.Mesh_1.geometry}
+          geometry={nodes.Mesh_2.geometry}
           material={materials["マテリアル.011"]}
         />
         <mesh
-          geometry={nodes.Mesh_2.geometry}
+          geometry={nodes.Mesh_3.geometry}
           material={materials["マテリアル.010"]}
         />
         <mesh
-          geometry={nodes.Mesh_3.geometry}
+          geometry={nodes.Mesh_4.geometry}
           material={materials.マテリアル}
         />
       </group>
@@ -718,15 +716,15 @@ export function Model(props) {
       />
       <group scale={1.278}>
         <mesh
-          geometry={nodes.Mesh_9?.geometry}
+          geometry={nodes.Mesh_10.geometry}
           material={materials["マテリアル.642"]}
         />
         <mesh
-          geometry={nodes.Mesh_10?.geometry}
+          geometry={nodes.Mesh_11.geometry}
           material={materials["マテリアル.650"]}
         />
         <mesh
-          geometry={nodes.Mesh_11?.geometry}
+          geometry={nodes.Mesh_12.geometry}
           material={materials["マテリアル.649"]}
         />
       </group>
@@ -931,11 +929,11 @@ export function Model(props) {
       </group>
       <group rotation={[0, Math.PI / 2, 0]} scale={1.035}>
         <mesh
-          geometry={nodes.Mesh_23?.geometry}
+          geometry={nodes.Mesh_24.geometry}
           material={materials["マテリアル.015"]}
         />
         <mesh
-          geometry={nodes.Mesh_24.geometry}
+          geometry={nodes.Mesh_25.geometry}
           material={materials["マテリアル.525"]}
         />
       </group>
@@ -1009,51 +1007,51 @@ export function Model(props) {
         material={materials["マテリアル.077"]}
       />
       <mesh
-        geometry={nodes.Mesh_29.geometry}
-        material={materials["マテリアル.065"]}
-      />
-      <mesh
-        geometry={nodes.Mesh_30.geometry}
-        material={materials["マテリアル.063"]}
-      />
-      <mesh
-        geometry={nodes.Mesh_31.geometry}
-        material={materials["マテリアル.077"]}
-      />
-      <mesh
-        geometry={nodes.Mesh_32.geometry}
-        material={materials["マテリアル.065"]}
-      />
-      <mesh
-        geometry={nodes.Mesh_33.geometry}
-        material={materials["マテリアル.063"]}
-      />
-      <mesh
-        geometry={nodes.Mesh_34.geometry}
-        material={materials["マテリアル.087"]}
-      />
-      <mesh
-        geometry={nodes.Mesh_35.geometry}
-        material={materials["マテリアル.088"]}
-      />
-      <points
         geometry={nodes.Mesh_36.geometry}
-        material={materials["マテリアル.087"]}
+        material={materials["マテリアル.065"]}
       />
       <mesh
         geometry={nodes.Mesh_37.geometry}
-        material={materials["マテリアル.089"]}
+        material={materials["マテリアル.063"]}
       />
       <mesh
         geometry={nodes.Mesh_38.geometry}
+        material={materials["マテリアル.077"]}
+      />
+      <mesh
+        geometry={nodes.Mesh_43.geometry}
+        material={materials["マテリアル.065"]}
+      />
+      <mesh
+        geometry={nodes.Mesh_44.geometry}
+        material={materials["マテリアル.063"]}
+      />
+      <mesh
+        geometry={nodes.Mesh_29.geometry}
         material={materials["マテリアル.087"]}
       />
       <mesh
-        geometry={nodes.Mesh_39.geometry}
+        geometry={nodes.Mesh_30.geometry}
         material={materials["マテリアル.088"]}
       />
       <points
-        geometry={nodes.Mesh_40.geometry}
+        geometry={nodes.Mesh_31.geometry}
+        material={materials["マテリアル.087"]}
+      />
+      <mesh
+        geometry={nodes.Mesh_32.geometry}
+        material={materials["マテリアル.089"]}
+      />
+      <mesh
+        geometry={nodes.Mesh_33.geometry}
+        material={materials["マテリアル.087"]}
+      />
+      <mesh
+        geometry={nodes.Mesh_34.geometry}
+        material={materials["マテリアル.088"]}
+      />
+      <points
+        geometry={nodes.Mesh_35.geometry}
         material={materials["マテリアル.089"]}
       />
       <mesh
@@ -1073,11 +1071,11 @@ export function Model(props) {
         material={materials["マテリアル.073"]}
       />
       <mesh
-        geometry={nodes.Mesh_43.geometry}
+        geometry={nodes.Mesh_45.geometry}
         material={materials["マテリアル.001"]}
       />
       <mesh
-        geometry={nodes.Mesh_44.geometry}
+        geometry={nodes.Mesh_46.geometry}
         material={materials["マテリアル.025"]}
       />
       <mesh
@@ -1105,11 +1103,11 @@ export function Model(props) {
         material={materials["マテリアル.073"]}
       />
       <mesh
-        geometry={nodes.Mesh_45.geometry}
+        geometry={nodes.Mesh_39.geometry}
         material={materials["マテリアル.001"]}
       />
       <mesh
-        geometry={nodes.Mesh_46.geometry}
+        geometry={nodes.Mesh_40.geometry}
         material={materials["マテリアル.025"]}
       />
       <mesh
