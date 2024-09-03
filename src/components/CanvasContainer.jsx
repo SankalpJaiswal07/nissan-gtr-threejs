@@ -4,8 +4,7 @@ import { Suspense } from "react";
 import { OrbitControls } from "@react-three/drei";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
-import { Model } from "../../public/Nissan-gtr-v1";
-// import Model from "../../public/Nissan-gtr";
+import { Model } from "../../public/Nissan-gtr-v2";
 
 gsap.registerPlugin(ScrollTrigger);
 
