@@ -21,7 +21,7 @@ function CanvasContainer() {
         }}
       >
         <ambientLight />
-        <Suspense fallback={<LoaderModel />}>
+        <Suspense fallback={null}>
           <Model />
         </Suspense>
         <OrbitControls enableZoom={false} />
