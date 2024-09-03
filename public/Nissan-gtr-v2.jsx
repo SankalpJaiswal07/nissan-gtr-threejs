@@ -13,7 +13,9 @@ import gsap from "gsap";
 import { useControls } from "leva";
 
 export function Model(props) {
-  const { nodes, materials } = useGLTF("/nissan-gtr-v2.glb");
+  const { nodes, materials } = useGLTF(
+    "https://ltpxzulovhrlxhmhlmnp.supabase.co/storage/v1/object/public/gtr-r35/nissan-gtr-v2.glb?t=2024-09-03T08%3A53%3A57.695Z"
+  );
   const { scene, camera, size } = useThree();
   const modelRef = useRef();
   const t1 = gsap.timeline();
