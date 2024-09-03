@@ -22,10 +22,10 @@ export function Model(props) {
     if (modelRef.current) {
       if (size.width < 768) {
         // Mobile view
-        modelRef.current.scale.set(1.0, 1.0, 1.0);
+        modelRef.current.scale.set(0.5, 0.5, 0.5);
       } else if (size.width < 1024) {
         // Tablet view
-        modelRef.current.scale.set(1.5, 1.5, 1.5);
+        modelRef.current.scale.set(1, 1, 1);
       } else {
         // Desktop view
         modelRef.current.scale.set(1.8, 1.8, 1.8);
