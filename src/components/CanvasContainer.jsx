@@ -5,6 +5,7 @@ import { OrbitControls } from "@react-three/drei";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { Model } from "./Nissan-gtr-v1";
+import LoaderModel from "./LoaderModel";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -20,7 +21,7 @@ function CanvasContainer() {
         }}
       >
         <ambientLight />
-        <Suspense fallback={<p>Loading...</p>}>
+        <Suspense fallback={<LoaderModel />}>
           <Model />
         </Suspense>
         <OrbitControls enableZoom={false} />
